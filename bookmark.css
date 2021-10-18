@@ -1,0 +1,164 @@
+.container {
+    display: grid;
+    grid-auto-columns: 1fr 9fr 0.8fr;
+    grid-row-gap: 0.5em;
+    padding-top: 0em;
+}
+
+.head {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
+    font-size: 3.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    padding-top: 0em;
+}
+
+.head > span , .fas{
+    color: dodgerblue;
+}
+
+form {
+    grid-column: 1/3;
+    grid-row: 3;
+    display: grid;
+    grid-auto-columns: 0.12fr 4fr 1fr;
+    grid-row-gap: 1em;
+}
+
+.form1 {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: grid;
+    grid-auto-columns: 0.5fr 6fr 2fr;
+}
+
+.form2 {
+    grid-column: 2/3;
+    grid-row: 2;
+    display: grid;
+    grid-auto-columns: 0.5fr 6fr 0.5fr;
+}
+
+.form3 {
+    grid-column: 2/3;
+    grid-row: 3;
+    display: grid;
+    grid-auto-columns: 0.5fr 6fr 0.5fr;
+}
+
+.lab {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 0.9em;
+    padding-bottom: 0.6em;
+}
+
+.isbn {
+    padding-left: 0.45em;
+}
+
+input {
+    border: 1px solid #ccc;
+    box-shadow: white 0.1px 0.1px 0.1px 0.1px;
+    transition: border box-shadow 15ms;
+    font-size: 0.96em;
+    padding: 0em;
+    padding-left: 0.6em;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid dodgerblue;
+    box-shadow: lightskyblue 0.5px 0.5px 2px 2px;
+}
+
+.input {
+    grid-column: 2;
+    grid-row: 2;
+    height: 3em;
+}
+
+.form3-2 {
+    grid-column:1/4;
+    grid-row: 3;
+    display: grid;
+    grid-auto-columns: 1fr 12fr 1fr;
+    grid-row-gap: 1.5em;
+}
+
+.isbnInput {
+    grid-column: 2;
+    grid-row: 1;
+    height: 3em;
+}
+
+.blue-btn {
+    height: 3em;
+    grid-column: 2;
+    grid-row: 2;
+    border: none;
+    background: dodgerblue;
+    color: #fff;
+}
+
+.blue-btn:hover {
+    background: rgb(25, 119, 214);
+}
+
+table {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: start;
+}
+
+tbody>:nth-child(2n+1) {
+    background: rgba(204, 204, 204, 0.459);
+}
+
+tbody>:nth-child(2n) {
+    background: white;
+}
+
+tbody {
+    border: none;
+}
+
+th {
+    text-align: left;
+    padding: 0.8em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding: 1em;
+}
+
+.btn-x {
+    text-decoration: none;
+    font-size: 0.7em;
+    color: white;
+    background: rgba(255, 0, 0, 0.829);
+    padding: 0.8em;
+}
+
+.newDiv {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 1em;
+    color: white;
+}
+
+.bookAdded {
+    background: rgba(0, 138, 0, 0.884);
+}
+
+.bookDeleted {
+    background: dodgerblue;
+}
+
+.fillAllDetails {
+    background:  rgb(223, 0, 0);
+}
